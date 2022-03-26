@@ -1,0 +1,46 @@
+.custom-nav .brand-logo:hover {
+  background-color: transparent;
+}
+
+.custom-nav .nav-item:hover {
+  background-color: transparent;
+}
+
+div.todos {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+div.todos .todo-item {
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+
+div.todos .todo-btn {
+  background-color: transparent;
+  border: 1px solid pink;
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: 500;
+  color: #e7516a;
+  cursor: pointer;
+}
+
+div.todos .todo-btn:hover {
+  background-color: pink;
+  color: white;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.page-404 {
+  text-align: center;
+}

@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from "./Page/home";
+import TodoBasic from "./Page/todo-basic";
+import about from './Page/about';
+import contact from './Page/contact';
+import aboutauthor from './Page/aboutauthor';
+import notfound from './Page/notfound';
+import Todoexpert from './Page/todo-expert';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/about" exact component={about} />
+        <Route path="/about/author" exact component={aboutauthor} />
+        <Route path="/contact" exact component={contact} />
+        <Route path="/todo-basic" exact component={TodoBasic} />
+        <Route path="/todo-expert" exact component={Todoexpert} />
+        <Route component={notfound} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
