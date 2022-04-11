@@ -2,9 +2,9 @@ import Layout from "../Components/layout"
 
 const aboutauthor =()=>{
    return (
-      <Layout>
-         <h1>About Author Page</h1>
+      <Layout title="About Author Page">
          Nama saya Oktavia 
+         Saya sedang belajar routing react
       </Layout>
    )
 }

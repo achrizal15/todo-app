@@ -17,11 +17,7 @@ const Todobasic = () => {
       isDone: true
    }]);
    return (
-      <Layout>
-         <h3>This is TODO BASIC</h3>
-         <article>
-
-         </article>
+      <Layout title='This is TODO BASIC'>         
          <div style={{ padding:'50px',border:"solid 1px gray",borderRadius:'20px'}}>
             {todos.map(todo => (
                <div className="todos">

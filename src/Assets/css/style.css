@@ -6,6 +6,11 @@
   background-color: transparent;
 }
 
+.container {
+  margin: auto;
+  width: 80%;
+}
+
 div.todos {
   display: flex;
   width: 500px;
@@ -43,4 +48,26 @@ div.todos .todo-btn:hover {
 
 .page-404 {
   text-align: center;
+}
+
+.nav {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.nav .nav-item {
+  padding-right: 10px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.nav .nav-item:last-child {
+  padding-right: 0;
+}
+
+.nav .nav-item:hover {
+  background-color: transparent;
 }

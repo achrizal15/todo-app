@@ -1,15 +1,28 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { Box } from '@mantine/core';
+
+import {
+   Notes,
+   CalendarStats,
+   Gauge,
+   PresentationAnalytics,
+   FileAnalytics,
+   Adjustments,
+   Lock,
+} from 'tabler-icons-react';
+import {React,useContext} from "react";
 import Layout from "../Components/layout";
+import { RouteContext } from '../Components/activeMenuContext';
 
 const Home = () => {
+   const {activeMenu,setActiveMenu}= useContext(RouteContext);
    return (
-      <Layout>
-         <h1>Home</h1>
-         <h4>LINK TUGAS TODO DASAR <Link to="/todo-basic"><a href="/todo-basic">KLIK</a></Link></h4>
-         <h4>LINK TUGAS TODO EXPERT <Link to="/todo-expert"><a href="/todo-expert">KLIK</a></Link></h4>
-         <h4>TES ROUTE NOT FOUND PAGE 404 <Link to="/inigakadaapapapa"><a href="/inigakadaapapapa">KLIK</a></Link></h4>
+      <Layout title="Introduction React">
+         Ini adalah awal halaman dan belajar React
+         {activeMenu}
       </Layout>
    );
 }
+
+
 export default Home;
+

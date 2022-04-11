@@ -15,7 +15,10 @@
       }
    }
 }
-
+.container{
+   margin:auto;
+   width: 80%;
+}
 //todos and todo-item
 div.todos {
    display: flex;
@@ -50,4 +53,23 @@ div.todos {
 }
 .page-404{
    text-align:center;
+}
+.nav{
+   background-color: transparent;
+   border: none;
+   border-radius: 0;
+   margin-bottom: 0;
+   padding: 0;
+   .nav-item{
+      padding-right: 10px;
+      margin: 0;
+      cursor: pointer;
+      //padding last
+      &:last-child{
+         padding-right: 0;
+      }
+      &:hover{
+         background-color: transparent;
+      }
+   }
 }

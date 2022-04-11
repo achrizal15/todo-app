@@ -37,8 +37,7 @@ const Todoexpert = () => {
       }
    }
    return (
-      <Layout>
-         <h3>This is TODO BASIC</h3>
+      <Layout title="Todo Expert">
          <div style={{ padding: '50px', border: "solid 1px gray", borderRadius: '20px' }}>
             <form style={{ marginBottom: "10px" }} onSubmit={(e) => handleSubmit(e)}>
                <input type="text" name="todo" placeholder="Add todo" />
@@ -53,6 +52,7 @@ const Todoexpert = () => {
                   <button className="todo-btn" onClick={() => deleteHandler(todo.id)}>DELETE</button>
                </div>
             ))}
+
          </div>
       </Layout>
    )
